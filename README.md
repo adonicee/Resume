@@ -21,11 +21,11 @@ This is a personal web resume project designed to showcase my professional exper
 
 1. **Clone the Repository**:  
    ```
-   git clone https://github.com/your-username/web-resume.git
+   git clone https://github.com/your-username/Resume.git
    ```
 2. **Navigate to the Project Directory**:  
    ```
-   cd web-resume
+   cd Resume
    ```
 3. **Open `index.html` in your browser**:  
    ```
