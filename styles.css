@@ -1,0 +1,273 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+}
+
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+header ul li a:hover {
+    background-color: #2c3e50;
+    border-radius: 5px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+#hero {
+    background-image: url('Images/Hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#hero button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #1f618d;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+#projects {
+    background-color: #fff;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project-item {
+    background-color: #f4f6f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.project-item img, .project-item video {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: #2c3e50;
+}
+
+.project-item p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    width: 80%;
+    text-align: center;
+}
+
+.project-link:hover {
+    background-color: #1f618d;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+    background-color: #ecf0f1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+form button {
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: 105%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #1f618d;
+}
+
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+@media (max-width: 768px) {
+    header ul {
+        display: none;
+        flex-direction: column;
+        background-color: #34495e;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}
