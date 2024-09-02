@@ -50,4 +50,6 @@ This project is open-source and available under the MIT License. You are free to
 
 For any inquiries or feedback, feel free to reach out via the contact form on the website or connect with me on social media.
 
+hassanisanaz.77@gmail.com
+
 ---
