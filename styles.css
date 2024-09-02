@@ -127,7 +127,7 @@ section {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 0 20px;
 }
@@ -218,8 +218,7 @@ form button {
     cursor: pointer;
     font-size: 1.1em;
     transition: background-color 0.3s ease;
-    width: 105%;
-    margin: 0 auto;
+    width: 100%;
     text-align: center;
 }
 
@@ -247,11 +246,15 @@ footer {
     transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
+social-icons a:hover {
     color: #3498db;
 }
 
 @media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
     header ul {
         display: none;
         flex-direction: column;
@@ -269,5 +272,17 @@ footer {
 
     .burger {
         display: block;
+    }
+
+    #hero h1 {
+        font-size: 2.2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
